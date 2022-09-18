@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      body{
+         padding: 30px;
+      }
+      input{
+         padding: 5px;
+         border-radius: 10px;
+      }
+      label{
+         margin-bottom: 3px;
+      }
+      .container_create_character{
+         display: flex;
+         flex-direction: column;
+         max-width: 250px;
+         align-items: center;
+      }
+         
+   </style>
+   <script src="script.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <h1>Create your character</h1>
+   <br>
+   <form class="container_create_character">
+      <label for="userName">Enter your character's name</label>
+      <input id="userName" type="text" name="name" autocomplete="off">
+      <br>
+      <br>
+      <label for="userAge">Enter your character's age</label>
+      <input id="userAge" type="number" name="age">
+      <br>
+      <br>
+      <label>Choose character's weapon</label>
+      <br>
+      <label for="userWeaponStick">Stick</label>
+      <input id="userWeaponStick" type="radio" name="userWeapon" value="stick">
+
+      <label for="userWeaponHammer">Hammer</label>
+      <input id="userWeaponHammer" type="radio" name="userWeapon" value="hammer">
+      
+      <label for="userWeaponBow">Bow</label>
+      <input id="userWeaponBow" type="radio" name="userWeapon" value="bow">
+      <br>
+      <select name="userOrigin">
+         <option selected="true" disabled="disabled">Choose your character's origin</option>  
+         <option value="ork">Ork</option>  
+         <option value="hobbit">Hobbit</option>  
+         <option value="elf">Elf</option>  
+      </select>
+      <br>
+      <br>
+      <label for="userMagic">Has character magic?</label>
+      <br>
+      <input id="userMagic" type="checkbox" name="userMagic">
+   </form>
+</body>
+</html>
